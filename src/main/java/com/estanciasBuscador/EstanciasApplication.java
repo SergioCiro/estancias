@@ -1,4 +1,4 @@
-package com.estanciasBuscador.estancias;
+package com.estanciasBuscador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
