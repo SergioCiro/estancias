@@ -1,12 +1,16 @@
 package com.estanciasBuscador.entidades;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
+import lombok.Data;
 
 import org.hibernate.annotations.GenericGenerator;
 
+@Data
+@Entity
 public class Familia {
 
     @Id
@@ -27,5 +31,7 @@ public class Familia {
     private Usuario usuario;
     @OneToOne
     private Casa casa;
+    
+    private Boolean active = true;
 
 }

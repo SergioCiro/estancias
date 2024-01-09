@@ -22,5 +22,9 @@ public class Comentario {
 
     @OneToOne
     private Casa casa;
+    
+    private Boolean active;
+    
+    
 
 }
